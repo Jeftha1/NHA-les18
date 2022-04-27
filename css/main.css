@@ -1,22 +1,19 @@
 body {
-	font-family:  'Waterfall', cursive;
+	font-family:  'Montserrat', sans-serif;
 	color:  ivory;
-	font-size:  200%;
 	background-color:  lightslategray;
-}
-
-#content {
-	margin-top:  20px;
 }
 
 [class*="col-"] {
 	width:  100%;
+	padding:  20px;
+	margin:  10px;
+
 }
 
 @media only screen and (min-width:  768px) {
 	[class*="col-"] {
 		float:  left;
-		padding:  15px;
 	}
 }
 
@@ -51,16 +48,43 @@ footer {
 	font-size:  75%;
 }
 
+#kolom-1 {
+	background-color: gray;
+	height: auto;
+	text-align: center;
+	margin-left:  auto;
+	margin-right:  auto;
+	overflow:  auto;
+}
+
+/* 
+Deze mediaquery lost het probleem met
+tekstoverflow op, maar ik weet niet of dat de 
+bedoeling is in combinatie met flexgrid. 
+In dit geval is overflow auto gebruikt.
+
+@media only screen and (max-width:  1200px) {
+	#kolom-1 {
+		width:  auto;
+	}
+}
+*/
+
 #kolom-2 {
 	background-color: dimgray;
+	margin-left:  auto;
+	margin-right:  auto;
 }
 
 #poldertoren {
 	float:  right;
 	max-height:  250px;
+	width: 335px;
+	margin: 10px;
 }
 
 #lange_nering {
 	float:  right;
 	max-height:  250px;
-}
+	width: 335px;
+	margin: 10px;
