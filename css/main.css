@@ -70,6 +70,17 @@ In dit geval is overflow auto gebruikt.
 }
 */
 
+/*
+Onderstaande code zorgt ervoor dat afbeeldingen op
+erg kleine beeldschermen (mobiels) niet buiten de 
+div uitkomen. 
+*/
+@media only screen and (max-width:  450px){
+	img{
+		max-width: 250px !important;
+	}
+}
+
 #kolom-2 {
 	background-color: dimgray;
 	margin-left:  auto;
